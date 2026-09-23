@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>O'qituvchilar bayrami munosabati bilan!</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    <style>
+        /* Reset va asosiy sozlamalar */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            -webkit-tap-highlight-color: transparent;
+        }
+
+        body {
+            background-color: #050505;
+            color: #ffffff;
+            font-family: 'Roboto', sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            overflow-x: hidden;
+            width: 100%;
+        }
+
+        /* Fon uchun chiroyli effekt */
+        .glow-bg {
+            position: fixed;
+            width: 100%;
+            height: 100%;
+            background: radial-gradient(circle at 50% 0%, #1a2a3a 0%, #050505 70%);
+            z-index: -1;
+            top: 0;
+            left: 0;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 800px;
+            padding: 40px 20px;
+            text-align: center;
+            animation: fadeIn 2s ease-in-out;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(30px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 2.5rem;
+            color: #00d4ff;
+            text-shadow: 0 0 15px rgba(0, 212, 255, 0.5);
+            margin-bottom: 15px;
+            letter-spacing: 1px;
+            line-height: 1.2;
+        }
+
+        .subtitle {
+            font-size: 1.2rem;
+            color: #a0a0a0;
+            font-style: italic;
+            margin-bottom: 40px;
+            padding-bottom: 20px;
+            position: relative;
+        }
+        
+        .subtitle::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 100px;
+            height: 1px;
+            background: #333;
+        }
+
+        .message {
+            font-size: 1.1rem;
+            line-height: 1.8;
+            color: #d1d1d1;
+            margin-bottom: 40px;
+            background: rgba(255, 255, 255, 0.03);
+            padding: 30px 25px;
+            border-radius: 15px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .video-wrapper {
+            position: relative;
+            width: 100%;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 0 30px rgba(0, 212, 255, 0.3);
+            border: 2px solid #00d4ff;
+            background: #000;
+        }
+
+        video {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .signature {
+            margin-top: 50px;
+            font-family: 'Playfair Display', serif;
+            font-size: 1.4rem;
+            color: #ffffff;
+            opacity: 0.9;
+        }
+
+        .signature span {
+            display: block;
+            font-size: 1.8rem;
+            color: #00d4ff;
+            font-weight: 700;
+            margin-top: 10px;
+            text-shadow: 0 0 10px rgba(0, 212, 255, 0.3);
+        }
+
+        .footer {
+            margin-top: 60px;
+            font-size: 0.9rem;
+            color: #555;
+        }
+
+        /* TELEFONLAR UCHUN MOSLASHUV (Media Queries) */
+        @media (max-width: 768px) {
+            .container {
+                padding: 30px 15px;
+            }
+            h1 { 
+                font-size: 2rem; 
+            }
+            .subtitle { 
+                font-size: 1rem; 
+                margin-bottom: 30px;
+            }
+            .message { 
+                font-size: 1rem; 
+                padding: 20px 15px;
+                line-height: 1.6;
+            }
+            .signature { 
+                font-size: 1.2rem; 
+                margin-top: 40px;
+            }
+            .signature span { 
+                font-size: 1.5rem; 
+            }
+        }
+
+        /* Juda kichik telefonlar uchun (iPhone SE kabi) */
+        @media (max-width: 380px) {
+            h1 { font-size: 1.7rem; }
+            .message { font-size: 0.9rem; }
+            .signature span { font-size: 1.3rem; }
+        }
+    </style>
+</head>
+<body>
+    <div class="glow-bg"></div>
+
+    <div class="container">
+        <h1>Bugun sizning kunningiz, Ustoz!</h1>
+        <p class="subtitle">"Bilim - kelajakka qo'yiladigan eng yaxshi investitsiya"</p>
+
+        <div class="message">
+            <p>Hurmatli o'qituvchim!</p>
+            <p>Siz nafaqat bizga bilim berdingiz, balki hayotga bo'lgan munosabatimizni, irodamizni va maqsadlarimizni shakllantirishga katta hissa qo'shdingiz. Har bir darsingizdagi mehnatingiz, sabr-toqatingiz va insoniyatingiz uchun chin dildan minnatdorman!</p>
+            <p>Sizning har bir og'iz so'zingiz, har bir nasihatingiz biz uchun yo'l-yo'riqdir. Ustozlar bayrami munosabati bilan sizga mustahkam sog'lik, oilaviy baxt-iroda va mehnat sevingizda ulkan yutuqlarni tilayman!</p>
+        </div>
+
+        <!-- BU YERGA VIDEO LINKINI QO'YING -->
+        <div class="video-wrapper">
+            <video controls playsinline width="100%">
+                <source src="C:\Users\AliCom\Desktop\Новая папка (2)\video_2026-09-23_14-32-38.mp4" type="video/mp4">
+                Brauzeringiz video ko'rsatishni qo'llab-quvvatlamaydi.
+            </video>
+        </div>
+
+        <div class="signature">
+            Hurmat bilan, o'quvchingiz:
+            <span>ALLAYEV OZODBEK</span>
+        </div>
+
+        <div class="footer">
+            &copy; 2024 | O'qituvchilar bayrami
+        </div>
+    </div>
+</body>
+</html>
